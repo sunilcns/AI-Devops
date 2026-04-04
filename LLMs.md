@@ -1,8 +1,4 @@
-- ** What are LLMS. **
-- ** Use of Supercomputer & Training of LLM  **
-
 **What are LLMs**
-
 **Use of Supercomputer & Training of LLM**
 
 
@@ -57,7 +53,7 @@ How LLMs Work (with Infrastructure + Speed + LLaMA)
  1. What is an LLM?
 
 A Large Language Model (LLM) is an AI model that:
-👉 Understands and generates human-like text by predicting the next word (token)
+ Understands and generates human-like text by predicting the next word (token)
 
 Examples:
 
@@ -114,7 +110,6 @@ Model generates response
 Much faster than training
 
 4. Role of Supercomputers 
-
 Supercomputers (or large GPU clusters) are used mainly for:
 Training:
 Train on billions of parameters
