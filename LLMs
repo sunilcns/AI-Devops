@@ -1,0 +1,126 @@
+- What are LLMS.
+- Use of Supercomputer & Training of LLM 
+
+LLMs are central to Generative AI, and this is a very common interview question area
+What is an LLM?
+
+LLM (Large Language Model) is a type of AI model that:
+👉 Understands and generates human-like text
+
+📌 Examples:
+ChatGPT
+GPT models (GPT-3, GPT-4, etc.)
+Google Gemini
+
+
+What they can do:
+Answer questions
+Write emails
+Generate code
+Summarize documents
+Translate languages
+
+LLMs are trained to:
+👉 Predict the next word in a sentence
+Example :
+Input: "DevOps is important because"
+Output: "it improves automation and reliability"
+
+| Feature  | Traditional Model | LLM                                 |
+| -------- | ----------------- | ----------------------------------- |
+| Output   | Label / number    | Full text                           |
+| Data     | Structured        | Unstructured (text)                 |
+| Size     | Small             | Very large (billions of parameters) |
+| Use case | Prediction        | Conversation, generation            |
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. What is GPT?
+GPT (Generative Pre-trained Transformer) is a type of LLM (Large Language Model).
+👉 It is the core AI model that understands and generates text.
+📌 Examples:
+	• GPT-3 
+	• GPT-4 
+
+🔹 2. What is ChatGPT?
+ChatGPT is:
+👉 An application (chat interface) built on top of GPT models
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+LLM:  LLMs work by converting text into tokens, processing them through transformer networks using attention mechanisms, 
+      and predicting the next token repeatedly to generate human-like responses.”
+
+
+📘 How LLMs Work (with Infrastructure + Speed + LLaMA)
+🔹 1. What is an LLM?
+
+A Large Language Model (LLM) is an AI model that:
+👉 Understands and generates human-like text by predicting the next word (token)
+
+Examples:
+
+ChatGPT
+GPT models
+LLaMA
+🔹 2. How LLMs Work (Step-by-Step)
+🧠 Core Idea:
+👉 LLM = Next word prediction at massive scale
+
+📌 Step 1: Input → Tokenization
+When you type:
+"DevOps improves system reliability"
+-  It is converted into tokens (small chunks):
+ - ["Dev", "Ops", "improves", "system", "reliability"]
+
+👉 Tokens = numbers internally
+
+📌 Step 2: Embeddings
+Each token → converted into vectors (numbers)
+👉 This helps model understand meaning & relationships
+📌 Step 3: Transformer Processing
+LLMs use Transformer architecture
+Key concept:
+👉 Attention mechanism
+
+It decides:
+Which words are important
+Context understanding
+
+Example:
+"bank" → river bank or money bank?
+Model uses context to decide.
+
+📌 Step 4: Prediction
+Model predicts:
+👉 “What is the next most likely token?”
+Example:
+Input: "DevOps improves."
+Output: "automation"
+
+This repeats → builds a full sentence.
+
+
+3. Training vs Inference 
+Training Phase:
+Done once
+Uses massive data (internet, books, code)
+Requires supercomputers
+
+Inference Phase:
+When YOU ask a question
+Model generates response
+Much faster than training
+
+4. Role of Supercomputers 🖥️
+
+Supercomputers (or large GPU clusters) are used mainly for:
+
+🏋️ Training:
+Train on billions of parameters
+Process huge datasets
+Run for weeks/months
+
+Used hardware:
+
+GPUs (NVIDIA A100, H100)
+Distributed clusters
