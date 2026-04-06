@@ -1,7 +1,9 @@
 
 Prompt Engineering in AI DevOps (LLMOps)
 
-“Prompt engineering in AI DevOps is the practice of designing structured inputs to ensure LLMs produce reliable, controlled, and automation-ready outputs in production systems
+“Prompt engineering in AI DevOps is the practice of designing structured inputs to ensure LLMs produce reliable, controlled, and automation-ready outputs in production systems. We usually give details to promt ( chatgpt/gemini). It has to be crisp and informative. This generates the result. Sometimes we will also give prompt to generate the yaml file later which will be fed to AI Agent api to perform a task Example : we can generate a specific Kubernatis manifest using a prompt. using the newly generated yaml file, AI agent will query Open AI and Deep seek (AI agents ) to peform a activity. The content of the yaml are called as token which has to be sufficient enough to carry out the activity. hence it could be cost effective.
+
+
 
 Why Prompt Engineering matters in DevOps
 In real systems:
