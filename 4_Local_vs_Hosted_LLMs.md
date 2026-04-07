@@ -29,16 +29,7 @@ Compliance	Easier for air-gapped envs	Depends on provider policy
 Model Size	Limited by RAM/VRAM	Very large models available
 
 
-LOCAL LLM                          HOSTED LLM
-─────────────────────              ──────────────────────────
-  Your App / DevOps Tool             Your App / DevOps Tool
-                 │                                             │
-                ▼                                          ▼ (HTTPS / API)
-  Local Model Runtime            Cloud Provider (Anthropic/OpenAI)
-  (Ollama / LM Studio)                         │
-                   │                                      ▼
-  Your Hardware (CPU/GPU)          Provider-managed GPU Clusters
-  (No internet needed)             (Auto-scaled, maintained)
+
 
 When to Use Local LLM
 	•  Sensitive / confidential data (healthcare, finance, legal)
