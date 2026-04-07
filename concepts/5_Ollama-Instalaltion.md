@@ -88,90 +88,90 @@ C:\Users\sunil>
       
   -----------------------------------------------------------------------------------------------------------------------
   Usage :
-  1. Quick Q&A / Chat
+  1. # Quick Q&A / Chat
       bash# Ask anything directly
       ollama run llama3 "What is DevOps?"
       ollama run llama3 "Explain microservices in simple terms"
       ollama run llama3 "Difference between Docker and Kubernetes"
 
-  2. Code Generation
+  2. # Code Generation
       bash# Generate scripts
       ollama run codellama "Write a Python script to monitor CPU usage"
       ollama run codellama "Write a bash script to backup files"
       ollama run codellama "Write a Dockerfile for a Node.js app"
 
-      # Fix code
+      -Fix code
       ollama run codellama "Fix this Python code: def add(a,b) return a+b"
 
-      # Explain code
+      - Explain code
       ollama run codellama "Explain this code: $(cat myscript.py)"
 
-  3. Log Analysis
+  3. # Log Analysis
       bash# Analyze logs directly
       ollama run llama3 "Analyze this log and find errors: $(cat app.log)"
 
-      # Find root cause
+      Find root cause
       ollama run llama3 "What is the root cause of this error:
       ConnectionRefusedError: [Errno 111] Connection refused"
 
-      # Summarize logs
+      Summarize logs
       ollama run llama3 "Summarize this log file: $(tail -50 /var/log/syslog)"
 
-  4. Write & Review IaC (Terraform / Kubernetes)
+  4. # Write & Review IaC (Terraform / Kubernetes)
       bash# Generate Terraform
       ollama run codellama "Write Terraform code to create AWS S3 bucket"
 
-    # Review Terraform plan
+      - Review Terraform plan
       ollama run llama3 "Review this Terraform plan and suggest improvements:
       $(cat plan.tf)"
-    # Generate Kubernetes YAML
+      - Generate Kubernetes YAML
       ollama run codellama "Write Kubernetes deployment YAML for nginx with 3 replicas"
-    # Debug Kubernetes
+      - Debug Kubernetes
       ollama run llama3 "Fix this Kubernetes YAML: $(cat deployment.yaml)"
 
-5. Write Documentation
+5. # Write Documentation
     bash# Generate README
     ollama run llama3 "Write a README.md for a Python Flask REST API project"
-    # Document a script
+    - Document a script
     ollama run llama3 "Write documentation for this script: $(cat deploy.sh)"
-    # Write runbook
+    - Write runbook
     ollama run llama3 "Write a runbook for deploying a Node.js app to AWS EC2"
 
 6. Security Review
     bash# Review script for security issues
     ollama run llama3 "Review this script for security vulnerabilities: $(cat script.sh)"
-    # Check Dockerfile security
+    - Check Dockerfile security
     ollama run llama3 "Find security issues in this Dockerfile: $(cat Dockerfile)"
-    # Suggest best practices
+    - Suggest best practices
     ollama run llama3 "What are security best practices for AWS IAM roles?"
 
-7. Debugging & Troubleshooting
+7. # Debugging & Troubleshooting
     bash# Debug errors
     ollama run llama3 "How to fix: Error response from daemon: port is already allocated"
 
-# Kubernetes issues
+    - Kubernetes issues
     ollama run llama3 "How to fix Kubernetes CrashLoopBackOff error"
 
-# Jenkins issues
+    - Jenkins issues
     ollama run llama3 "Jenkins pipeline failed with exit code 1, how to debug?"
 
-8.  Generate Test Data
+8.  # Generate Test Data
     bash# Generate sample JSON
     ollama run llama3 "Generate 5 sample JSON records for a user database"
-    # Generate test cases
+    - Generate test cases
     ollama run codellama "Write unit tests for this Python function: $(cat utils.py)"
-    # Generate dummy data
+    - Generate dummy data
     ollama run llama3 "Generate sample CSV data with name, email, age columns"
 
-9.  CI/CD Pipeline Help
+9.  # CI/CD Pipeline Help
     bash# Generate GitHub Actions
     ollama run codellama "Write GitHub Actions workflow for Python app CI/CD"
-    # Generate Jenkinsfile
+    - Generate Jenkinsfile
     ollama run codellama "Write a Jenkinsfile for building and deploying a Docker image"
-    # Optimize pipeline
+    - Optimize pipeline
     ollama run llama3 "How can I optimize this CI/CD pipeline: $(cat Jenkinsfile)"
 
-    10. API Usage in Scripts
+10. # API Usage in Scripts
     bash# Use Ollama API in shell script
     #!/bin/bash
     QUESTION="How to reduce Docker image size?"
