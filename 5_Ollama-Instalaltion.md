@@ -1,6 +1,8 @@
 Lama Models key links :
-https://ollama.com/library/llama3.2
-https://medium.com/pythoneers/llama-3-2-1b-and-3b-small-but-mighty-23648ca7a431
+
+1. https://ollama.com/library/llama3.2
+
+2. https://medium.com/pythoneers/llama-3-2-1b-and-3b-small-but-mighty-23648ca7a431
 
 Errors : 
 Once Ollama is installed by default it may start working in any language. 
