@@ -14,3 +14,4 @@ Install required libraries:
 pip install requests
 
 
+<img width="846" height="487" alt="image" src="https://github.com/user-attachments/assets/0fc68386-7264-438d-8279-aa0628be0cd4" />
