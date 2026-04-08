@@ -21,7 +21,31 @@ ollama run llama3.2 "What is Docker?"
 ollama serve
 
 
+# ─── MODEL MANAGEMENT ───────────────────────────
+ollama pull llama3.2          # Download model
+ollama pull codellama       # Download code model
+ollama list                 # List all models
+ollama rm llama3.2            # Delete model
+ollama show llama3.2          # Model details
 
+# ─── RUN & CHAT ─────────────────────────────────
+ollama run llama3.2           # Start interactive chat
+ollama run llama3.2 "prompt"  # One-shot question
+ollama run codellama        # Run code model
+
+# ─── SERVER ─────────────────────────────────────
+ollama serve                # Start server
+curl http://localhost:11434 # Check server status
+
+# ─── CUSTOM MODEL ───────────────────────────────
+ollama create mymodel -f Modelfile   # Create custom
+ollama cp llama3.2 mymodel             # Copy model
+
+# ─── INSIDE CHAT SESSION ────────────────────────
+/bye                        # Exit chat
+/clear                      # Clear history
+/show info                  # Show model info
+/?                          # Help
 
 
 
@@ -87,14 +111,14 @@ llama3.2:1b    baf6a787fdff    1.3 GB    About an hour ago
 C:\Users\sunil>
       
   -----------------------------------------------------------------------------------------------------------------------
-  Usage :
-  1. # Quick Q&A / Chat
+  # Usage :
+  # 1. Quick Q&A / Chat
       bash# Ask anything directly
       ollama run llama3 "What is DevOps?"
       ollama run llama3 "Explain microservices in simple terms"
       ollama run llama3 "Difference between Docker and Kubernetes"
 
-  2. # Code Generation
+  # 2. Code Generation
       bash# Generate scripts
       ollama run codellama "Write a Python script to monitor CPU usage"
       ollama run codellama "Write a bash script to backup files"
@@ -106,7 +130,7 @@ C:\Users\sunil>
       - Explain code
       ollama run codellama "Explain this code: $(cat myscript.py)"
 
-  3. # Log Analysis
+  # 3.  Log Analysis
       bash# Analyze logs directly
       ollama run llama3 "Analyze this log and find errors: $(cat app.log)"
 
@@ -117,7 +141,7 @@ C:\Users\sunil>
       Summarize logs
       ollama run llama3 "Summarize this log file: $(tail -50 /var/log/syslog)"
 
-  4. # Write & Review IaC (Terraform / Kubernetes)
+  # 4. Write & Review IaC (Terraform / Kubernetes)
       bash# Generate Terraform
       ollama run codellama "Write Terraform code to create AWS S3 bucket"
 
@@ -129,7 +153,7 @@ C:\Users\sunil>
       - Debug Kubernetes
       ollama run llama3 "Fix this Kubernetes YAML: $(cat deployment.yaml)"
 
-5. # Write Documentation
+ # 5  Write Documentation
     bash# Generate README
     ollama run llama3 "Write a README.md for a Python Flask REST API project"
     - Document a script
@@ -137,7 +161,7 @@ C:\Users\sunil>
     - Write runbook
     ollama run llama3 "Write a runbook for deploying a Node.js app to AWS EC2"
 
-6. Security Review
+#  6 Security Review
     bash# Review script for security issues
     ollama run llama3 "Review this script for security vulnerabilities: $(cat script.sh)"
     - Check Dockerfile security
@@ -145,7 +169,7 @@ C:\Users\sunil>
     - Suggest best practices
     ollama run llama3 "What are security best practices for AWS IAM roles?"
 
-7. # Debugging & Troubleshooting
+# 7  Debugging & Troubleshooting
     bash# Debug errors
     ollama run llama3 "How to fix: Error response from daemon: port is already allocated"
 
@@ -155,7 +179,7 @@ C:\Users\sunil>
     - Jenkins issues
     ollama run llama3 "Jenkins pipeline failed with exit code 1, how to debug?"
 
-8.  # Generate Test Data
+# 8  Generate Test Data
     bash# Generate sample JSON
     ollama run llama3 "Generate 5 sample JSON records for a user database"
     - Generate test cases
@@ -163,7 +187,7 @@ C:\Users\sunil>
     - Generate dummy data
     ollama run llama3 "Generate sample CSV data with name, email, age columns"
 
-9.  # CI/CD Pipeline Help
+# 9 CI/CD Pipeline Help
     bash# Generate GitHub Actions
     ollama run codellama "Write GitHub Actions workflow for Python app CI/CD"
     - Generate Jenkinsfile
@@ -171,7 +195,7 @@ C:\Users\sunil>
     - Optimize pipeline
     ollama run llama3 "How can I optimize this CI/CD pipeline: $(cat Jenkinsfile)"
 
-10. # API Usage in Scripts
+# 10 API Usage in Scripts
     bash# Use Ollama API in shell script
     #!/bin/bash
     QUESTION="How to reduce Docker image size?"
