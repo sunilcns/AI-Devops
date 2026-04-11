@@ -35,7 +35,7 @@ Return ONLY the raw Dockerfile content — no markdown fences, no explanation.""
 
     # Extract the text from the response
     return response["message"]["content"].strip()
-
+ 
 
 def main():
     print("=== Dockerfile Generator (powered by Ollama llama3.2) ===\n")
